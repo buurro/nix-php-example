@@ -1,10 +1,7 @@
 {
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-    phps = {
-      url = "github:loophp/nix-shell";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
+    phps.url = "github:loophp/nix-shell";
   };
 
   outputs = { self, nixpkgs, phps }:
